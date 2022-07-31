@@ -1,0 +1,11 @@
+Algorithm to install ESP32 in Arduino IDE:
+
+1-	Download Arduino IDE.
+2-	After installing it, go to file > preferences.
+3-	In the additional boards manager URLs put this URL (https://dl.espressif.com/dl/package_esp32_index.json).
+4-	To install the library of ESP32 go to Tools > Board:"Arduino Uno"> Boards Manager.
+5-	Search for "esp32" and install esp32 by Espressif Systems.
+6-	Now connect the wisdom to the USB wire.
+7-	Go to Tools > Board:"Arduino Uno"> ESP32 Arduino > select WEMOS D1 MINI ESP32.
+8-	To select the port you connected, go to Tools > Port: "COM3" and select "COM3".
+9-	To turn on the ESP lighting, go to File > Examples > 01. Basics > Blink.
