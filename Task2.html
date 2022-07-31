@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+ <meta charset="utf-8">
+
+ <title>speech to text </title>
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+<!-- FontAwesome -->
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="styles.css"/>  
+</head>
+
+<body>
+
+ <div class="container">
+
+ <h1 class="text-center mt-5" style="color:black ;    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+Speech to text , make the arm move !!
+
+ </h1>
+
+ 
+
+ <div class="container g-0 mt-5 justify-content-center">
+
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+       <!--<li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Robot Movement
+                <img class="directions" src="images/controller.svg"></button>
+        </li>--> 
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Robot Arm
+                <img class="robot-arm" src="imgbin_mechatronics-engineering-robotic-arm-technology-png.png" height="130" width="90"></button>
+        </li>
+
+
+    </ul>
+
+
+
+
+
+ <div class="form-group">
+
+ <textarea  id="textbox" rows="6" class="form-control"></textarea>
+
+ </div>
+
+ <div class="form-group">
+
+ <button id="start-btn" style="color:black ; background-color: rgb(18, 56, 91);  font-weight: bold; 
+ border-radius: 50%;  border: none;
+ color: white;
+ padding: 40px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ font-size: 30px;"  class="btn btn-danger btn-block" title="" >
+    Begin
+ </button>
+<button class = "btn btn-danger btn-block" style="color:black ; background-color: rgb(18, 56, 91);;  font-weight: bold;
+ border-radius: 50%;  border: none;
+ color: white;
+ padding: 40px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ font-size: 30px;"  onclick="onConnectUsb()" id="connect-usb">
+    Connect to arm-usb
+</button>
+
+
+ 
+ <p id="instructions">To start speech press the Start button</p>
+
+ </div>
+ 
+ <div class="row g-0 mx-5 mt-5 justify-content-center">
+    <div class="col-sm-6 col-lg-6  msg"><h3 class="text-light p-4">Hello,<br> Thanks for make me move!!</h3>
+    </div>
+   <!--<img class="col-sm-6 col-lg-3 robot mx-3" src="images/arm3.png" alt="robot">--> 
+</div>
+
+
+
+
+ </div>
+
+ <br> <br> <br> <br> 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ <script src="script.js"></script>
+<script src="arduino.js"></script>
+<footer>
+    <p class="text-light text-center mx-5 pt-3" style="color:black ; background-color: rgb(18, 56, 91);;  font-weight: bold;">By IT Basil ALothaim © 2022</p>
+</footer>
+<script>
+
+
+</script>
+
+</body>
+
+</html>
